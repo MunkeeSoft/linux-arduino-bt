@@ -4,7 +4,7 @@
 import sys, argparse
 
 # Check for arguments
-parser = argparse.ArgumentParser(description='Query a Bluetooth node and post data to Cosm', epilog="If you do not include all the Cosm arguments, data will only be printed")
+parser = argparse.ArgumentParser(description='Query a Bluetooth node and (optionally) post data to Cosm.', epilog="If you do not include all the Cosm arguments, data will only be printed.")
 parser.add_argument('-k', type=str, help="Cosm API key", metavar="Key")
 parser.add_argument('-f', type=str, help="Cosm feed ID", metavar="Feed ID")
 parser.add_argument('-d', type=str, help="Cosm feed datapoint ID", metavar="Datapoint ID")
